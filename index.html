@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="title-container">
+            <h1> Todo List</h1>
+            <div class="details">
+                <div class="box-1">
+                    <p id="task-stats">Total: 0 | Completed:0 |Pending:0</p>
+                    <div id="progress-bar" >
+                    <div id="progress-fill"></div>
+                </div>
+                </div>
+                <div class="stats-number">
+                    <p id="numbers">  </p>
+                </div>
+                </div>
+        </div>
+    
+    <div class="task-input">
+        <div id="input-task">
+            <input id="input-box" type="text" placeholder="Enter your task">
+            <button onclick="addTask(event)" id="newtask" type="submit"> Add </button>
+        </div>
+        
+        <div> <ul id="list-container">  </ul> </div>
+    </div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
